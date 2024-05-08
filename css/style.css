@@ -92,7 +92,8 @@ body {
 
 .size-50 {
     font-size: 50px;
-    line-height: 50px
+    line-height: 50px;
+    clear: both;
 }
 
 .h-50 {
@@ -182,11 +183,11 @@ body {
         margin-top: -18.75px;
         margin-left: -7.95px
     }
-    
+
 }
 
 @media only screen and (min-width:1200px) {
-    
+
     .preloader {
         height: 60px;
         width: 60px;
@@ -549,7 +550,7 @@ a.active {
     background-color: #fff;
 }
 
-.title img{
+.title img {
     width: 100%;
     max-width: 160px;
     display: block;
@@ -565,14 +566,20 @@ a.active {
     background: #fffda1;
 }
 
+.last {}
+
 .timeline {
     padding-left: 0;
     list-style: none;
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .timeline:before {
-    background-color: #2F4858;
     content: '';
     margin-left: -1px;
     position: absolute;
@@ -584,10 +591,32 @@ a.active {
 
 .timeline-event {
     position: relative;
+    height: 200px;
 }
-.timeline-event{
-    width:50%;
-    float:left;
+
+.timeline-event {
+    width: 50%;
+}
+
+.ex li:nth-child(1) {
+    order: 1;
+}
+
+.ex li:nth-child(2) {
+    order: 3;
+}
+
+.ex li:nth-child(3) {
+    order: 2;
+}
+
+.ex li:nth-child(4) {
+    order: 4;
+}
+
+.ex li:nth-child(5) {
+    order: 5;
+    margin-left: 50%;
 }
 
 .timeline-event:hover .timeline-event-icon {
@@ -719,11 +748,33 @@ a.active {
         left: 2em;
     }
 
-    .timeline-event{
-        width:100%;
+    .timeline-event {
+        width: 100%;
         float: none;
-        }
-        
+    }
+
+    .ex li:nth-child(1) {
+        order: 1;
+    }
+
+    .ex li:nth-child(2) {
+        order: 2;
+    }
+
+    .ex li:nth-child(3) {
+        order: 3;
+    }
+
+    .ex li:nth-child(4) {
+        order: 4;
+    }
+
+    .ex li:nth-child(5) {
+        order: 5;
+        margin-left: 0;
+    }
+
+
 }
 
 @media (max-width: 600px) {
