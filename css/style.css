@@ -607,11 +607,11 @@ a.active {
 }
 
 .ex li:nth-child(3) {
-    order: 2;
+    order: 4;
 }
 
 .ex li:nth-child(4) {
-    order: 4;
+    order: 2;
 }
 
 .ex li:nth-child(5) {
@@ -762,11 +762,11 @@ a.active {
     }
 
     .ex li:nth-child(3) {
-        order: 3;
+        order: 4;
     }
 
     .ex li:nth-child(4) {
-        order: 4;
+        order: 3;
     }
 
     .ex li:nth-child(5) {
